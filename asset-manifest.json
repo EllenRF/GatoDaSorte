@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/GatoDaSorte/static/js/main.26a6889e.js",
+    "main.js": "/GatoDaSorte/static/js/main.367f50ad.js",
     "static/js/787.bdc3d018.chunk.js": "/GatoDaSorte/static/js/787.bdc3d018.chunk.js",
     "static/media/loading.gif": "/GatoDaSorte/static/media/loading.803f24369a085e35482e.gif",
     "static/media/imgInicio.png": "/GatoDaSorte/static/media/imgInicio.5ea4d41a09ee6f4c81b7.png",
     "static/media/close.png": "/GatoDaSorte/static/media/close.7f04d81d5a553700543d.png",
     "index.html": "/GatoDaSorte/index.html",
-    "main.26a6889e.js.map": "/GatoDaSorte/static/js/main.26a6889e.js.map",
+    "main.367f50ad.js.map": "/GatoDaSorte/static/js/main.367f50ad.js.map",
     "787.bdc3d018.chunk.js.map": "/GatoDaSorte/static/js/787.bdc3d018.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.26a6889e.js"
+    "static/js/main.367f50ad.js"
   ]
 }
