@@ -12,10 +12,11 @@ async function getSortes() {
 async function getImagens() {
     const csrfToken = Cookies.get('csrfToken');
     const apiKey = process.env.CAT_API_KEY;
+    alert(apiKey)
     const url = "https://api.thecatapi.com/v1/images/search"
     sessionStorage.setItem("carregandoImagem", true);
 
-    axios.get(url, { withCredentials: true, headers: { "x-api-key": apiKey, "X-CSRF-TOKEN": csrfToken } })
+    axios.get(url, { withCredentials: true, headers: { "x-api-key": apiKey, "X-CSRF-TOKEN": csrfToken, "Origin": 'https://ellenrf.github.io' } })
         .then(function (response) {
             sessionStorage.setItem("url", response.data[0].url)
             sessionStorage.setItem("carregandoImagem", false);
