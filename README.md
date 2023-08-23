@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# Autenticação de usuário simples e login com Iquirer e Firebase
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Primeiro desafio do processo de formação: criar um sistema de autenticação que utilizasse ao menos dois objetos, manipulação de arrays e funções de callbacks.
 
-## Available Scripts
+## Instalação
 
-In the project directory, you can run:
+1. Clone o repositório para sua máquina local:
 
-### `npm start`
+   ```bash
+   git clone "Link do repositorio"
+   ```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. Instale as dependências do projeto:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+   ```bash
+   npm install
+   ```
 
-### `npm test`
+3. Execute:
+   ```bash
+   npm run start
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Configurando o .env (Máquina local)
 
-### `npm run build`
+- Crie o arquivo .env e coloque as seguintes keys para o projeto:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+CAT_API_KEY = "sua_api_key"
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Para conseguir a chave de acesso da The Cat API você precisa se registrar [aqui](https://thecatapi.com/signup)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Antes de inicializar o front-end, tenha certeza que você estará rodando a APIGATO de frases que estará rodando no localhost:4000
 
-### `npm run eject`
+## Dependências
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- [React](https://react.dev/)
+- [Axios](https://axios-http.com/ptbr/docs/intro)
+- [Styled-Components](https://styled-components.com/)
+- [The Cat API](https://thecatapi.com/)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Funcionalidades
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Gerar biscoito da sorte conjunto de uma imagem com temática de gato
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Feedback ou Dúvidas
 
-## Learn More
+Sinta-se à vontade para enviar feedback ou dúvidas, envie email para ellen_rochafarias@hotmail.com
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Licença
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Este projeto está licenciado sob a [Licença MIT](https://opensource.org/licenses/MIT).
 
-### Code Splitting
+- Os icones utilizados para esse projeto foram retirados do [flaticon](https://www.flaticon.com/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- As imagens foram geradas através da [The Cat API](https://thecatapi.com/)
 
-### Analyzing the Bundle Size
+- A fonte do header foi criado através da [Hello Catto](https://www.dafont.com/hello-catto.font)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Status do Projeto
 
-### Making a Progressive Web App
+Versão mais recente: 1.0.0
+Estado: Concluído
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Histórico de Versões
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- 1.0.0 : Versão inicial do projeto.
