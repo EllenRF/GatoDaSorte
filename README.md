@@ -1,6 +1,6 @@
-# Autenticação de usuário simples e login com Iquirer e Firebase
+# Gato da Sorte
 
-Primeiro desafio do processo de formação: criar um sistema de autenticação que utilizasse ao menos dois objetos, manipulação de arrays e funções de callbacks.
+Frases de sorte com tematica de gato.
 
 ## Instalação
 
