@@ -2,7 +2,7 @@ import axios from "axios";
 import Cookies from "js-cookie";
 
 // Utilizado para pegar as frases
-const sorteAPI = axios.create({ baseURL: "https://glitch.com/~gato-api" })
+const sorteAPI = axios.create({ baseURL: "https://gato-api.glitch.me/" })
 async function getSortes() {
     const response = await sorteAPI.get('/')
     return response.data
