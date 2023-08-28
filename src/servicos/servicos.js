@@ -14,7 +14,16 @@ async function getImagens() {
     const url = "https://api.thecatapi.com/v1/images/search"
     sessionStorage.setItem("carregandoImagem", true);
 
-    axios.get(url, { withCredentials: true, headers: { "x-api-key": process.env.CAT_API_KEY, "X-CSRF-TOKEN": csrfToken, "Origin": 'https://ellenrf.github.io' } })
+    axios.get(url, {
+        withCredentials: true, headers: {
+            "x-api-key": process.env.CAT_API_KEY,
+            "X-CSRF-TOKEN": csrfToken,
+            "Origin": 'https://ellenrf.github.io',
+            'SameSite': 'None',
+            'Secure': true,
+            credentials: true
+        }
+    })
         .then(function (response) {
             sessionStorage.setItem("url", response.data[0].url)
             sessionStorage.setItem("carregandoImagem", false);
