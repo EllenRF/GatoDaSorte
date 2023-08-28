@@ -1,7 +1,5 @@
 import axios from "axios";
 import Cookies from "js-cookie";
-import http from "http"
-import httpProxy from "http-proxy"
 
 // Utilizado para pegar as frases
 const sorteAPI = axios.create({ baseURL: "https://gato-api.glitch.me/" })
