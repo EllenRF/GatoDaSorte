@@ -1,5 +1,7 @@
 import axios from "axios";
 import Cookies from "js-cookie";
+import http from "http"
+import httpProxy from "http-proxy"
 
 // Utilizado para pegar as frases
 const sorteAPI = axios.create({ baseURL: "https://gato-api.glitch.me/" })
@@ -11,17 +13,12 @@ async function getSortes() {
 // Utilizado para pegar as imagens
 async function getImagens() {
     const csrfToken = Cookies.get('csrfToken');
-    const url = "https://api.thecatapi.com/v1/images/search"
+    const url = "https://gato-api.glitch.me/v1/images/search"
     sessionStorage.setItem("carregandoImagem", true);
 
     axios.get(url, {
         withCredentials: true, headers: {
-            "x-api-key": process.env.CAT_API_KEY,
-            "X-CSRF-TOKEN": csrfToken,
-            "Origin": 'https://ellenrf.github.io',
-            'SameSite': 'None',
-            'Secure': true,
-            credentials: true
+            "x-api-key": process.env.CAT_API_KEY
         }
     })
         .then(function (response) {
