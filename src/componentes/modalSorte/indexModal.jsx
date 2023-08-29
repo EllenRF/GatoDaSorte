@@ -28,7 +28,7 @@ function ModaldaSorte({ onClose }) {
                 {/*  Verifica o estado do carregamento para mostrar o conteudo da sorte */}
                 {carregamento ? (<Carregamento />) : (<div>
                     <p>"{sorte}"</p>
-                    <ImagemGato src={sessionStorage.getItem("url")}></ImagemGato>
+                    <ImagemGato src={sessionStorage.getItem("img")}></ImagemGato>
                 </div>
                 )}
             </CaixaDiv>

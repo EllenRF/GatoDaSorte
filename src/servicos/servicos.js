@@ -1,29 +1,25 @@
 import axios from "axios";
-import Cookies from "js-cookie";
+
+const sorteAPI = axios.create({ baseURL: "https://apig-ato-ellenrf.vercel.app/" })
 
 // Utilizado para pegar as frases
-const sorteAPI = axios.create({ baseURL: "https://gato-api.glitch.me/" })
 async function getSortes() {
-    const response = await sorteAPI.get('/')
-    return response.data
+    try{
+        const response = await sorteAPI.get('/')
+        return response.data
+    } catch(err) {console.log(err)}
 }
 
 // Utilizado para pegar as imagens
 async function getImagens() {
-    const csrfToken = Cookies.get('csrfToken');
-    const url = "https://gato-api.glitch.me/v1/images/search"
     sessionStorage.setItem("carregandoImagem", true);
 
-    axios.get(url, {
-        withCredentials: true, headers: {
-            "x-api-key": process.env.CAT_API_KEY
-        }
-    })
-        .then(function (response) {
-            sessionStorage.setItem("url", response.data[0].url)
-            sessionStorage.setItem("carregandoImagem", false);
-        })
-        .catch(err => { console.log(err) })
+    try{
+        const response = await sorteAPI.get('/img')
+        sessionStorage.setItem("img", response.data)
+        sessionStorage.setItem("carregandoImagem", false);
+    }
+    catch(err){ console.log(err) }
 }
 
 export {
